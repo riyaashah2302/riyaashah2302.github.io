@@ -1,6 +1,6 @@
-# Riya Shah Portfolio
+# Riya XYZ Portfolio
 
-This repository contains the static portfolio site for Riya Shah and is ready to be published on GitHub Pages.
+This repository contains the static portfolio site for Riya XYZ and is ready to be published on GitHub Pages.
 
 ## Project structure
 
