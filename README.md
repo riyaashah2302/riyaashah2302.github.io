@@ -1,18 +1,29 @@
-# Riya's Portfolio — GitHub Pages Deploy
+# Riya Shah Portfolio
 
-This folder contains the **fully built static website** ready to deploy on GitHub Pages.
+This repository contains the static portfolio site for Riya Shah and is ready to be published on GitHub Pages.
 
-## How to Deploy
+## Project structure
 
-### Step 1 — Create a GitHub Repo
-- Go to github.com and create a **new repository**
-- Name it `yourusername.github.io` → your site will be live at `https://yourusername.github.io`
+- `index.html` — Home page
+- `projects/` — Project case studies and category pages
+- `experience/` — Experience pages
+- `resume.html` — Resume page
+- `contact.html` — Contact page
+- `.nojekyll` — Required for GitHub Pages to preserve static assets
 
-### Step 2 — Push this folder
-Open Terminal and run:
+## Deploy to GitHub Pages
+
+### 1) Create a GitHub repository
+
+- Open GitHub and create a new repository.
+- Use the naming convention `yourusername.github.io` so it is published at `https://yourusername.github.io`.
+
+### 2) Push the site
+
+Run the following commands in your terminal:
 
 ```bash
-cd /Users/ellerecon/Desktop/riya-portfolio-deploy
+cd /Users/riyashah/Desktop/Portfolio/riyaashah2302.github.io
 git init
 git add .
 git commit -m "Deploy portfolio site"
@@ -21,12 +32,19 @@ git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 git push -u origin main
 ```
 
-### Step 3 — Enable GitHub Pages
-1. Go to your repo on GitHub → Settings → Pages
-2. Under Source, select "Deploy from a branch"
-3. Set branch to `main`, folder to `/ (root)`
-4. Click Save
+### 3) Enable Pages in GitHub
 
-Your site will be live in ~1-2 minutes! 🎉
+1. Open the repository in GitHub.
+2. Go to Settings → Pages.
+3. Select "Deploy from a branch".
+4. Set the branch to `main` and the folder to `/ (root)`.
+5. Save the settings.
 
-> NOTE: The .nojekyll file is required — do NOT delete it!
+The site should go live within a couple of minutes.
+
+> Important: keep the `.nojekyll` file in place. It prevents GitHub Pages from processing the site as a Jekyll project.
+
+## Notes
+
+- The site is a fully static portfolio built for fast publishing and minimal configuration.
+- Generated Next.js assets under `_next/` are included for the deployed build and should not be removed unless rebuilding the site from the source project.
